@@ -1,24 +1,77 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { Categories } from "@/components/site/Categories";
+import { FeaturedProducts } from "@/components/site/FeaturedProducts";
+import { Benefits } from "@/components/site/Benefits";
+import { About } from "@/components/site/About";
+import { Testimonials } from "@/components/site/Testimonials";
+import { WhatsAppCTA } from "@/components/site/WhatsAppCTA";
+import { Location } from "@/components/site/Location";
+import { Footer } from "@/components/site/Footer";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
+import { company } from "@/data/site";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title =
+  "Lessa Agropecuária | Rações, Produtos e Cuidados para seus Animais";
+const description =
+  "Encontre rações, produtos agropecuários, medicamentos veterinários e itens para seus animais na Lessa Agropecuária. Fale conosco pelo WhatsApp.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { property: "og:locale", content: "pt_BR" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: company.name,
+          description: description,
+          telephone: company.phoneDisplay,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: company.address.street,
+            addressLocality: company.address.city,
+            addressRegion: company.address.state,
+            postalCode: company.address.zip,
+            addressCountry: "BR",
+          },
+          openingHours: ["Mo-Fr 08:00-18:00", "Sa 08:00-13:00"],
+          areaServed: company.address.city,
+        }),
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <Hero />
+        <Categories />
+        <FeaturedProducts />
+        <Benefits />
+        <About />
+        <Testimonials />
+        <WhatsAppCTA />
+        <Location />
+      </main>
+      <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }
