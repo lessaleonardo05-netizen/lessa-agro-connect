@@ -23,14 +23,14 @@ export function FeaturedProducts() {
           {featuredProducts.map((product, i) => (
             <Reveal as="li" key={product.id} delay={i * 70}>
               <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
-                <div className="overflow-hidden bg-secondary">
+                <div className="overflow-hidden bg-card p-4">
                   <img
                     src={product.image}
                     alt={product.alt}
-                    width={900}
-                    height={900}
+                    width={1000}
+                    height={1000}
                     loading="lazy"
-                    className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                    className="aspect-square w-full object-contain transition-transform duration-500 group-hover:scale-[1.04]"
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-6">

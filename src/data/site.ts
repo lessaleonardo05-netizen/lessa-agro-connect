@@ -8,12 +8,19 @@
  * ===============================================================
  */
 
-import racaoCaes from "@/assets/prod-racao-caes.jpg";
-import areiaGatos from "@/assets/prod-areia-gatos.jpg";
-import racaoAves from "@/assets/prod-racao-aves.jpg";
-import veterinario from "@/assets/prod-veterinario.jpg";
-import agropecuaria from "@/assets/prod-agropecuaria.jpg";
-import utilidades from "@/assets/prod-utilidades.jpg";
+import racaoCaesAsset from "@/assets/prod-racao-caes.jpg.asset.json";
+import areiaGatosAsset from "@/assets/prod-areia-gatos.jpg.asset.json";
+import racaoAvesAsset from "@/assets/prod-racao-aves.jpg.asset.json";
+import veterinarioAsset from "@/assets/prod-veterinario.jpg.asset.json";
+import agropecuariaAsset from "@/assets/prod-agropecuaria.jpg.asset.json";
+import utilidadesAsset from "@/assets/prod-utilidades.jpg.asset.json";
+
+const racaoCaes = racaoCaesAsset.url;
+const areiaGatos = areiaGatosAsset.url;
+const racaoAves = racaoAvesAsset.url;
+const veterinario = veterinarioAsset.url;
+const agropecuaria = agropecuariaAsset.url;
+const utilidades = utilidadesAsset.url;
 
 /** --------- EMPRESA --------- */
 export const company = {
