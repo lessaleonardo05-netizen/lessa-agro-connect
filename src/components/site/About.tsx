@@ -1,4 +1,4 @@
-import sobreImage from "@/assets/sobre-loja.jpg";
+import lojaAsset from "@/assets/loja-lessa.jpg.asset.json";
 import { Reveal } from "./Reveal";
 import { WhatsAppButton } from "./WhatsAppButton";
 
@@ -10,10 +10,10 @@ export function About() {
           <Reveal>
             <div className="overflow-hidden rounded-3xl border border-border bg-card">
               <img
-                src={sobreImage}
-                alt="Equipe da Lessa Agropecuária atendendo um cliente no balcão da loja"
-                width={1200}
-                height={1008}
+                src={lojaAsset.url}
+                alt="Fachada da loja Lessa Agropecuária em Iguaba Grande — RJ"
+                width={1175}
+                height={1338}
                 loading="lazy"
                 className="h-full w-full object-cover"
               />
