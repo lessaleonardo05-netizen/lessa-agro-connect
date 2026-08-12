@@ -22,20 +22,20 @@ export const company = {
   tagline:
     "Qualidade, variedade e confiança para cuidar dos seus animais e da sua propriedade.",
   /** WhatsApp em formato internacional, apenas números: 55 + DDD + número */
-  whatsapp: "5500000000000",
+  whatsapp: "5522997367655",
   /** Mensagem automática enviada ao abrir o WhatsApp */
   whatsappMessage:
     "Olá! Vim pelo site da Lessa Agropecuária e gostaria de saber mais sobre os produtos.",
   /** Telefone exibido na tela (edite junto com o WhatsApp acima) */
-  phoneDisplay: "(00) 00000-0000",
+  phoneDisplay: "(22) 99736-7655",
   address: {
-    street: "Rua Exemplo, 123 — Centro",
-    city: "Cidade",
-    state: "UF",
-    zip: "00000-000",
+    street: "Rua Maria Gorete, 713 — Cidade Nova",
+    city: "Iguaba Grande",
+    state: "RJ",
+    zip: "28960-000",
   },
   /** Consulta do endereço no Google Maps (embed e rotas) */
-  mapsQuery: "Lessa Agropecuária",
+  mapsQuery: "Lessa Agropecuária, Iguaba Grande - RJ",
   hours: [
     { days: "Segunda a sexta", time: "08:00 às 18:00" },
     { days: "Sábado", time: "08:00 às 13:00" },

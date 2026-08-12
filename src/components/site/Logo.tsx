@@ -1,7 +1,8 @@
 import { company } from "@/data/site";
 import { cn } from "@/lib/utils";
+import logoMark from "@/assets/logo-lessa.png";
 
-/** Marca da Lessa Agropecuária: folha + inicial, sem imagens externas. */
+/** Marca da Lessa Agropecuária: cão + gato na cor da identidade visual. */
 export function Logo({
   className,
   inverted = false,
@@ -14,23 +15,11 @@ export function Logo({
       <span
         className={cn(
           "grid size-10 shrink-0 place-items-center rounded-xl",
-          inverted ? "bg-primary-foreground/12" : "bg-primary",
+          inverted ? "bg-primary-foreground" : "bg-secondary",
         )}
         aria-hidden="true"
       >
-        <svg viewBox="0 0 24 24" className="size-5" fill="none">
-          <path
-            d="M20 4c0 8.5-4.7 12.6-10.4 12.6H6.6C6.6 9.2 11.6 4.8 20 4Z"
-            fill={inverted ? "currentColor" : "var(--primary-foreground)"}
-            opacity={inverted ? 0.95 : 0.95}
-          />
-          <path
-            d="M5 21c.6-4.6 2.7-8.3 6.4-11"
-            stroke={inverted ? "currentColor" : "var(--primary-foreground)"}
-            strokeWidth="1.8"
-            strokeLinecap="round"
-          />
-        </svg>
+        <img src={logoMark} alt="" className="size-7 object-contain" />
       </span>
       <span className="flex min-w-0 flex-col leading-none">
         <span
