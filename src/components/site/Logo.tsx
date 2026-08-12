@@ -12,15 +12,12 @@ export function Logo({
 }) {
   return (
     <span className={cn("flex min-w-0 items-center gap-2.5", className)}>
-      <span
-        className={cn(
-          "grid size-10 shrink-0 place-items-center rounded-xl",
-          inverted ? "bg-primary-foreground" : "bg-secondary",
-        )}
+      <img
+        src={logoMark}
+        alt=""
         aria-hidden="true"
-      >
-        <img src={logoMark} alt="" className="size-7 object-contain" />
-      </span>
+        className="size-10 shrink-0 rounded-xl object-cover"
+      />
       <span className="flex min-w-0 flex-col leading-none">
         <span
           className={cn(
