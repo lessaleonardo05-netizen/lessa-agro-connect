@@ -1,6 +1,6 @@
-import avatarRafael from "@/assets/avatar-rafael.jpg";
-import avatarCamila from "@/assets/avatar-camila.jpg";
-import avatarDiego from "@/assets/avatar-diego.jpg";
+import avatarJoao from "@/assets/avatar-joao.jpg";
+import avatarMariana from "@/assets/avatar-mariana.jpg";
+import avatarAnderson from "@/assets/avatar-anderson.jpg";
 /**
  * ===============================================================
  * CONFIGURAÇÃO CENTRAL — LESSA AGROPECUÁRIA
@@ -239,28 +239,28 @@ export const testimonials: Testimonial[] = [
   {
     id: "1",
     quote:
-      "Gosto bastante da Lessa Agropecuária. Sempre encontro a ração que procuro e o atendimento é muito bom. O pessoal é atencioso e ajuda quando tenho alguma dúvida.",
-    author: "Rafael Martins",
-    role: "Tutor de cachorro",
-    avatar: avatarRafael,
+      "Costumo passar na Lessa quando preciso de ração ou alguma coisa para casa. O atendimento é bom, o pessoal sempre ajuda e geralmente encontro o que estou procurando. É uma loja que já virou referência pra gente aqui.",
+    author: "João Carlos",
+    role: "Pedreiro",
+    avatar: avatarJoao,
     rating: 5,
   },
   {
     id: "2",
     quote:
-      "Já compro na Lessa há um tempo e gosto muito do atendimento. Tem uma boa variedade de produtos para os meus gatos e o preço costuma ser bem justo. Recomendo!",
-    author: "Camila Souza",
-    role: "Tutora de gatos",
-    avatar: avatarCamila,
+      "Compro bastante coisa para os animais lá. Gosto porque consigo resolver várias coisas em um só lugar e o pessoal atende muito bem. Sempre que preciso, passo na Lessa.",
+    author: "Mariana Alves",
+    role: "Dona de pequeno sítio",
+    avatar: avatarMariana,
     rating: 5,
   },
   {
     id: "3",
     quote:
-      "Lugar de confiança para comprar produtos para os animais. Sempre fui bem atendido e consigo encontrar boas opções de ração com preços que cabem no bolso. Recomendo a loja.",
-    author: "Diego Oliveira",
-    role: "Tutor de vários pets",
-    avatar: avatarDiego,
+      "Passo na Lessa principalmente para comprar ração. O atendimento é rápido e o pessoal é muito tranquilo de conversar. Já conheço a loja há um tempo e sempre fui bem atendido.",
+    author: "Anderson Souza",
+    role: "Motorista",
+    avatar: avatarAnderson,
     rating: 5,
   },
 ];
