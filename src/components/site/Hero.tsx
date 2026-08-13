@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-racao-quatree.jpg.asset.json";
+import heroImage from "@/assets/hero-racao-quatree-duo.jpg.asset.json";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 const trustItems = [
@@ -60,9 +60,9 @@ export function Hero() {
             <div className="overflow-hidden rounded-3xl bg-card shadow-lift">
               <img
                 src={heroImage.url}
-                width={1408}
-                height={1104}
-                alt="Saco de ração Quatree Supreme Natural 1 kg para cães adultos de raças pequenas, disponível na Lessa Agropecuária"
+                width={1152}
+                height={928}
+                alt="Sacos de ração Quatree Supreme Natural 1 kg para cães e para gatos adultos, disponíveis na Lessa Agropecuária"
                 className="h-full w-full object-cover"
                 fetchPriority="high"
               />
