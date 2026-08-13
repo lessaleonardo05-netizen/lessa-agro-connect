@@ -14,8 +14,9 @@ export function Testimonials() {
             Quem compra, recomenda.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            Espaço reservado para as avaliações reais dos nossos clientes.
+            O que os clientes dizem sobre o atendimento e os produtos da loja.
           </p>
+
         </Reveal>
 
         <ul className="mt-12 grid gap-6 md:grid-cols-3">
