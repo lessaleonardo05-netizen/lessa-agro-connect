@@ -39,9 +39,25 @@ export function Testimonials() {
                 <blockquote className="mt-4 flex-1 text-base leading-relaxed text-secondary-foreground">
                   “{item.quote}”
                 </blockquote>
-                <figcaption className="mt-6 border-t border-border pt-4 text-sm font-semibold text-muted-foreground">
-                  — {item.author}
+                <figcaption className="mt-6 flex items-center gap-3 border-t border-border pt-4">
+                  <img
+                    src={item.avatar}
+                    alt={`Foto de ${item.author}`}
+                    loading="lazy"
+                    width={80}
+                    height={80}
+                    className="size-11 shrink-0 rounded-full object-cover"
+                  />
+                  <span className="flex flex-col">
+                    <span className="text-sm font-semibold text-primary-deep">
+                      {item.author}
+                    </span>
+                    <span className="text-xs text-muted-foreground">
+                      {item.role}
+                    </span>
+                  </span>
                 </figcaption>
+
               </figure>
             </Reveal>
           ))}
