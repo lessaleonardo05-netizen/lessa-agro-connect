@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-loja.jpg";
+import heroImage from "@/assets/hero-racao-quatree.jpg.asset.json";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 const trustItems = [
