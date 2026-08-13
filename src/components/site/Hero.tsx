@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-loja.jpg";
+import heroImage from "@/assets/hero-racao-quatree.jpg.asset.json";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 const trustItems = [
@@ -59,10 +59,10 @@ export function Hero() {
           <div className="relative animate-fade-up [animation-delay:150ms]">
             <div className="overflow-hidden rounded-3xl bg-card shadow-lift">
               <img
-                src={heroImage}
+                src={heroImage.url}
                 width={1408}
                 height={1104}
-                alt="Atendente da Lessa Agropecuária mostrando um saco de ração para um cliente na loja"
+                alt="Saco de ração Quatree Supreme Natural 1 kg para cães adultos de raças pequenas, disponível na Lessa Agropecuária"
                 className="h-full w-full object-cover"
                 fetchPriority="high"
               />
