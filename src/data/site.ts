@@ -1,3 +1,6 @@
+import avatarRafael from "@/assets/avatar-rafael.jpg";
+import avatarCamila from "@/assets/avatar-camila.jpg";
+import avatarDiego from "@/assets/avatar-diego.jpg";
 /**
  * ===============================================================
  * CONFIGURAÇÃO CENTRAL — LESSA AGROPECUÁRIA
@@ -227,26 +230,37 @@ export type Testimonial = {
   id: string;
   quote: string;
   author: string;
+  role: string;
+  avatar: string;
   rating: number;
 };
 
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    quote: "Espaço reservado para a avaliação de um cliente da loja.",
-    author: "Cliente Lessa Agropecuária",
+    quote:
+      "Gosto bastante da Lessa Agropecuária. Sempre encontro a ração que procuro e o atendimento é muito bom. O pessoal é atencioso e ajuda quando tenho alguma dúvida.",
+    author: "Rafael Martins",
+    role: "Tutor de cachorro",
+    avatar: avatarRafael,
     rating: 5,
   },
   {
     id: "2",
-    quote: "Espaço reservado para a avaliação de um cliente da loja.",
-    author: "Cliente Lessa Agropecuária",
+    quote:
+      "Já compro na Lessa há um tempo e gosto muito do atendimento. Tem uma boa variedade de produtos para os meus gatos e o preço costuma ser bem justo. Recomendo!",
+    author: "Camila Souza",
+    role: "Tutora de gatos",
+    avatar: avatarCamila,
     rating: 5,
   },
   {
     id: "3",
-    quote: "Espaço reservado para a avaliação de um cliente da loja.",
-    author: "Cliente Lessa Agropecuária",
+    quote:
+      "Lugar de confiança para comprar produtos para os animais. Sempre fui bem atendido e consigo encontrar boas opções de ração com preços que cabem no bolso. Recomendo a loja.",
+    author: "Diego Oliveira",
+    role: "Tutor de vários pets",
+    avatar: avatarDiego,
     rating: 5,
   },
 ];
