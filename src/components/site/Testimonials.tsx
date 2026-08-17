@@ -10,22 +10,21 @@ export function Testimonials() {
           <span className="text-xs font-bold uppercase tracking-[0.16em] text-primary">
             Avaliações
           </span>
-          <h2 className="mt-3 text-3xl text-primary-deep md:text-4xl">
+          <h2 className="mt-3 text-[1.75rem] leading-tight text-primary-deep sm:text-3xl md:text-4xl">
             Quem compra, recomenda.
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted-foreground md:mt-4 md:text-base">
             O que os clientes dizem sobre o atendimento e os produtos da loja.
           </p>
-
         </Reveal>
 
-        <ul className="mt-12 grid gap-6 md:grid-cols-3">
+        <ul className="snap-row mt-8 md:mt-12 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:p-0 md:[margin-inline:0]">
           {testimonials.map((item, i) => (
-            <Reveal as="li" key={item.id} delay={i * 80}>
-              <figure className="flex h-full flex-col rounded-2xl border border-border bg-card p-7">
-                <Quote className="size-7 text-accent" aria-hidden="true" />
+            <Reveal as="li" key={item.id} delay={i * 80} className="md:flex-none">
+              <figure className="flex h-full flex-col rounded-2xl border border-border bg-card p-5 sm:p-7">
+                <Quote className="size-6 text-accent sm:size-7" aria-hidden="true" />
                 <div
-                  className="mt-4 flex gap-0.5"
+                  className="mt-3 flex gap-0.5 sm:mt-4"
                   aria-label={`${item.rating} de 5 estrelas`}
                 >
                   {Array.from({ length: item.rating }).map((_, index) => (
@@ -36,10 +35,10 @@ export function Testimonials() {
                     />
                   ))}
                 </div>
-                <blockquote className="mt-4 flex-1 text-base leading-relaxed text-secondary-foreground">
+                <blockquote className="mt-3 flex-1 text-[0.9375rem] leading-relaxed text-secondary-foreground sm:mt-4 sm:text-base">
                   “{item.quote}”
                 </blockquote>
-                <figcaption className="mt-6 flex items-center gap-3 border-t border-border pt-4">
+                <figcaption className="mt-5 flex items-center gap-3 border-t border-border pt-4 sm:mt-6">
                   <img
                     src={item.avatar}
                     alt={`Foto de ${item.author}`}
@@ -57,11 +56,11 @@ export function Testimonials() {
                     </span>
                   </span>
                 </figcaption>
-
               </figure>
             </Reveal>
           ))}
         </ul>
+
       </div>
     </section>
   );

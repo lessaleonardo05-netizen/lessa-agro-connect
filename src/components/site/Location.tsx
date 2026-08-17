@@ -12,18 +12,19 @@ export function Location() {
           <span className="text-xs font-bold uppercase tracking-[0.16em] text-primary">
             Localização
           </span>
-          <h2 className="mt-3 text-3xl text-primary-deep md:text-4xl">
+          <h2 className="mt-3 text-[1.75rem] leading-tight text-primary-deep sm:text-3xl md:text-4xl">
             Visite nossa loja
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted-foreground md:mt-4 md:text-base">
             Estamos prontos para atender você pessoalmente e ajudar na escolha
             dos produtos.
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10">
-          <Reveal className="space-y-6">
-            <div className="rounded-2xl border border-border bg-card p-7">
+        <div className="mt-8 grid gap-6 md:mt-12 md:gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10">
+          <Reveal className="space-y-5 sm:space-y-6">
+            <div className="rounded-2xl border border-border bg-card p-5 sm:p-7">
+
               <div className="flex min-w-0 items-start gap-4">
                 <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
                   <MapPin className="size-5" strokeWidth={1.8} />
@@ -40,7 +41,8 @@ export function Location() {
                 </div>
               </div>
 
-              <div className="mt-7 flex min-w-0 items-start gap-4 border-t border-border pt-7">
+              <div className="mt-5 flex min-w-0 items-start gap-4 border-t border-border pt-5 sm:mt-7 sm:pt-7">
+
                 <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
                   <Clock className="size-5" strokeWidth={1.8} />
                 </span>
@@ -64,7 +66,7 @@ export function Location() {
                 </div>
               </div>
 
-              <div className="mt-7 flex min-w-0 items-start gap-4 border-t border-border pt-7">
+              <div className="mt-5 flex min-w-0 items-start gap-4 border-t border-border pt-5 sm:mt-7 sm:pt-7">
                 <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
                   <Phone className="size-5" strokeWidth={1.8} />
                 </span>
@@ -89,16 +91,17 @@ export function Location() {
           </Reveal>
 
           <Reveal delay={120}>
-            <div className="h-full min-h-[22rem] overflow-hidden rounded-2xl border border-border bg-card">
+            <div className="h-full min-h-[16rem] overflow-hidden rounded-2xl border border-border bg-card sm:min-h-[22rem]">
               <iframe
                 title="Mapa da localização da Lessa Agropecuária"
                 src={mapsEmbedUrl}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="h-full min-h-[22rem] w-full border-0"
+                className="h-full min-h-[16rem] w-full border-0 sm:min-h-[22rem]"
               />
             </div>
           </Reveal>
+
         </div>
       </div>
     </section>

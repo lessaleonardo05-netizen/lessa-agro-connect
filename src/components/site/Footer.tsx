@@ -9,8 +9,9 @@ export function Footer() {
   return (
     <footer className="bg-primary-deep text-primary-foreground">
       <div className="container-page">
-        <div className="grid gap-12 py-16 md:grid-cols-3 md:gap-10">
-          <div>
+        <div className="grid grid-cols-2 gap-8 py-12 md:grid-cols-3 md:gap-10 md:py-16">
+          <div className="col-span-2 md:col-span-1">
+
             <Logo inverted />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-primary-foreground/70">
               {tagline}
@@ -93,11 +94,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 py-6">
+        <div className="border-t border-primary-foreground/10 py-6 pb-24 md:pb-6">
           <p className="text-center text-xs text-primary-foreground/60">
             © 2026 {company.name}. Todos os direitos reservados.
           </p>
         </div>
+
       </div>
     </footer>
   );
