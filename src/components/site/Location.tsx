@@ -41,7 +41,8 @@ export function Location() {
                 </div>
               </div>
 
-              <div className="mt-7 flex min-w-0 items-start gap-4 border-t border-border pt-7">
+              <div className="mt-5 flex min-w-0 items-start gap-4 border-t border-border pt-5 sm:mt-7 sm:pt-7">
+
                 <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
                   <Clock className="size-5" strokeWidth={1.8} />
                 </span>
@@ -65,7 +66,7 @@ export function Location() {
                 </div>
               </div>
 
-              <div className="mt-7 flex min-w-0 items-start gap-4 border-t border-border pt-7">
+              <div className="mt-5 flex min-w-0 items-start gap-4 border-t border-border pt-5 sm:mt-7 sm:pt-7">
                 <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
                   <Phone className="size-5" strokeWidth={1.8} />
                 </span>
@@ -90,16 +91,17 @@ export function Location() {
           </Reveal>
 
           <Reveal delay={120}>
-            <div className="h-full min-h-[22rem] overflow-hidden rounded-2xl border border-border bg-card">
+            <div className="h-full min-h-[16rem] overflow-hidden rounded-2xl border border-border bg-card sm:min-h-[22rem]">
               <iframe
                 title="Mapa da localização da Lessa Agropecuária"
                 src={mapsEmbedUrl}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="h-full min-h-[22rem] w-full border-0"
+                className="h-full min-h-[16rem] w-full border-0 sm:min-h-[22rem]"
               />
             </div>
           </Reveal>
+
         </div>
       </div>
     </section>
